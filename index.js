@@ -8,4 +8,4 @@ app.use(cors())
 app.options('*', cors())
 app.get('/', (req, res) => res.send(countries))
 
-app.listen(process.env.API_PORT)
+app.listen(process.env.API_PORT || 8080)
